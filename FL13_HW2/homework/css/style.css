@@ -1,0 +1,231 @@
+.tm-nav-item:hover,
+.box.box-bg:hover {
+    background-color: lightskyblue;
+}
+
+.tm-nav-item-link:hover,
+.box.box-bg h2:hover {
+    color: #fff;
+
+}
+
+
+
+.tm-banner {
+    background: linear-gradient(to top, lightskyblue, burlywood);
+}
+
+.tm-banner .tm-banner-text {
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: rgb(4, 98, 156);
+    text-shadow: 0 10px 2px rgba(47, 125, 173, 0.486);
+    animation-name: textRotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.tm-banner-inner {
+    background-color: white;
+}
+
+#home,
+.tm-main-nav,
+section {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+section .padding-medium.flex-2-col {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 0 40px 0;
+}
+
+.tm-team-description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tm-section-description {
+    font-style: italic;
+    font-size: 14px;
+    color: gray;
+    text-indent: 25px;
+    padding: 0 15px;
+}
+
+.padding-medium h2 {
+    text-align: center;
+    color: lightskyblue;
+}
+
+.padding-medium ol {
+    list-style: decimal-leading-zero;
+}
+
+.padding-medium ol li a:hover {
+    color: rgb(109, 2, 2);
+    font-weight: bold;
+}
+
+.padding-medium ol li a:hover::before {
+    content: ">";
+}
+
+.padding-medium ol li:nth-child(1)::after,
+.padding-medium ol li:nth-child(3)::after {
+    content: "new";
+    color: rgb(175, 3, 3);
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.tm-team-description-container .tm-section-description {
+    color: rgb(0, 0, 0);
+}
+
+.tm-team-description-container .tm-section-description:last-child {
+    text-align: left;
+    width: 100%;
+}
+
+.blocks .tm-content-box .boxes.gallery-container li {
+    padding: 10px;
+}
+
+.boxes.gallery-container li:nth-child(even) {
+    background-color: lightskyblue;
+    color: white;
+
+}
+
+.boxes.gallery-container li p {
+    font-style: italic;
+
+}
+
+.boxes.gallery-container li p::first-letter {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.tm-section-description.carousel-description {
+    color: black;
+}
+
+#contact .tm-section-title {
+    text-align: right;
+}
+
+#contact input {
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+}
+
+#contact input:focus {
+    background-color: lightskyblue;
+    color: white;
+}
+
+#contact_subject {
+    background-image: url(../img/email-icon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+#contact button {
+    background-color: white;
+    border: 2px solid lightskyblue;
+    border-radius: 0;
+    color: lightskyblue;
+    float: right;
+}
+
+#contact button:hover {
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+}
+
+section::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: linear-gradient(to top left, rgba(135, 206, 250, 0) 50%, lightskyblue 50%);
+}
+
+
+@media print{
+
+
+    @keyframes textRotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    .tm-team-description-container{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .tm-team-description-container .tm-section-description,.tm-team-description-container .tm-section-description:last-child{
+        text-align: center;
+    }
+    section .tm-team-img,#about,#ideas+.tm-content-box,.carousel-indicators,.blocks .tm-content-box{
+        display: none;
+    }
+    .tm-team-description-container{
+        max-width: 100%;
+    }
+    .tm-team-img,.tm-sidebar{
+        display: none;
+    }
+    #tmCarousel,section .padding-medium.flex-2-col,.tm-main-content,.padding-medium{
+        padding: 0;
+    }
+    .tm-content-box{
+        margin-bottom: 0;
+    }
+    .padding-medium ol {
+        list-style: none;
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .padding-medium ol li:nth-child(1)::after,
+    .padding-medium ol li:nth-child(3)::after {
+        content: "";
+    }
+    .padding-medium ol li:nth-child(even){
+        text-align: right;
+    }
+    .padding-medium ol li:nth-child(odd){
+        text-align: left;
+    }
+}
