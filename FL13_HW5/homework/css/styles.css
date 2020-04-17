@@ -1,0 +1,352 @@
+body {
+  font-family: roboto;
+  background-color: #0b192f;
+}
+
+.post-1 {
+  background: #F3D250;
+}
+
+.post-2 {
+  background: #8D8741;
+}
+
+.post-3 {
+  background: #659DBD;
+}
+
+.post-4 {
+  background: #DAAD86;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  max-width: 1400px;
+  margin: 0 10px;
+}
+
+header,
+footer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #162b4d;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.logo,
+nav {
+  width: 50%;
+}
+
+nav ol li:first-child {
+  display: none;
+}
+
+.logo {
+  padding-left: 30px;
+  font-size: 40px;
+
+}
+
+.logo span {
+  color: rgb(99, 1, 1);
+}
+
+nav ol {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ol li:hover {
+  color: #b8b8b8;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 25%;
+}
+
+.col {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  color: #484848;
+  flex-wrap: wrap;
+}
+
+.col:nth-child(even),
+.col:nth-child(even) .wrapPost {
+  flex-direction: row-reverse;
+}
+
+.col:nth-child(even) .text {
+  text-align: right;
+}
+
+.image,
+.post {
+  width: 50%;
+}
+
+.image img,
+.lastPost img,
+.rightPost img {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapPost {
+  display: flex;
+  padding: 20px 20px 0;
+}
+
+.big {
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+.small {
+  line-height: 1.8;
+  margin-top: 1%;
+}
+
+.number {
+  font-size: 50px;
+}
+
+.month {
+  font-size: 30px;
+}
+
+.lastPost {
+  position: relative;
+  height: auto;
+}
+
+.posText {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.posText h2,
+.rightText h2 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.rightPost {
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.rightText {
+  color: #484848;
+  padding: 20px;
+}
+
+.rightText {
+  line-height: 1.5;
+}
+
+.rightText p {
+  margin: 15px 0;
+}
+
+.rightText button {
+  border: 2px solid #484848;
+  padding: 10px 15px;
+}
+
+footer {
+  margin: 20px 10px 0;
+  padding: 20px;
+  line-height: 1.5;
+  color: #484848;
+}
+
+@media screen and (min-width: 1420px) {
+
+  header,
+  main,
+  footer {
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .small,
+  .posText p,
+  .rightText p {
+    font-size: 12px;
+  }
+
+  .big,
+  .posText h2,
+  .rightText h2 {
+    font-size: 30px;
+  }
+
+  .number,
+  .month {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 1000px)and (min-width: 768px) {
+
+  .small,
+  .posText p,
+  .rightText p {
+    font-size: 10px;
+  }
+
+  .big,
+  .posText h2,
+  .rightText h2 {
+    font-size: 18px;
+  }
+
+  .number,
+  .month {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .left {
+    width: 60%;
+  }
+
+  .right {
+    width: 35%;
+  }
+
+  .wrapPost {
+    display: block;
+  }
+
+  .wrapPost .data {
+    text-align: center;
+  }
+
+  .data {
+    display: flex;
+    justify-content: center;
+  }
+
+  .number {
+    margin-right: 5px;
+  }
+
+  .col .wrapPost .text {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  .lastPost .small,
+  .rightPost .small {
+    font-size: 9px;
+  }
+
+  .lastPost h2,
+  .rightPost h2 {
+    font-size: 14px;
+  }
+
+  .posText {
+    top: 10%;
+  }
+
+  .rightPost button {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .wrapPost {
+    margin-top: -4px;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .logo,
+  nav {
+    margin: 0 auto;
+  }
+
+  nav ol li {
+    display: none;
+  }
+
+  nav ol li:first-child,
+  nav ol {
+    display: block;
+  }
+
+  nav ol:hover li {
+    display: block;
+  }
+
+  .col {
+    display: block;
+  }
+
+  .image,
+  .post {
+    width: 100%;
+  }
+
+  header .logo {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  main {
+    display: block;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  header .logo {
+    font-size: 30px;
+  }
+}
