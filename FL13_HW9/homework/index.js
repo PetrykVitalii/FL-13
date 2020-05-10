@@ -6,6 +6,9 @@ function convert(...arg) {
       : arrConvert.push(`${arg[i]}`);
   }
   return arrConvert;
+  do {
+    
+  } while (condition);
 }
 console.log(convert('1', 2, 3, '4'));
 
