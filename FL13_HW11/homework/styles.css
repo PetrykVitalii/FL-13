@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#root{
+    width: 500px;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    margin: 100px auto;
+    padding: 50px;
+}
+p{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.firstLevel{
+    width: 400px;
+}
+#root div{
+    min-height: 40px;
+    line-height: 40px;
+}
+p:hover{
+    background-color: rgb(236, 233, 233);
+}
+.secondLevel{
+    width: 350px;
+    margin-left: 50px;
+    display: none;
+}
+.thirdLevel{
+    width: 300px;
+    margin-left: 50px;
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
+.empty::after{
+    content: "Folder is empty";
+    display: block;
+    font-style: italic;
+    cursor: text;
+}
+.wrapper{
+    position: absolute;
+    width: 75px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper button{
+    width: 100%;
+    
+}
