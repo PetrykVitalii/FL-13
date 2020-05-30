@@ -1,0 +1,19 @@
+#app-container{
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    text-align: left;
+}
+table td{
+    padding: 5px 10px;
+}
+.loading{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: large;
+}
